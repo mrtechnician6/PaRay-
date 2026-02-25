@@ -76,4 +76,32 @@ body {
 @keyframes fly {
     0% { transform: translateY(0) rotate(0deg); opacity: 1; }
     100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+/* Hide hints initially */
+.tap-hint {
+    opacity: 0;
+    transition: opacity 1s ease;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: var(--accent); /* or any light color */
 }
+
+/* Ensure images don't stretch */
+.img-frame img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Add a blinking cursor effect for the typewriter */
+.message::after {
+    content: "|";
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
