@@ -1,4 +1,39 @@
-// All your messages stored here
+function typeWriter() {
+    if (charIndex < typewriterText.length) {
+        document.getElementById("typewriter").innerHTML += typewriterText.charAt(charIndex);
+        charIndex++;
+        setTimeout(typeWriter, 60);
+    }
+}
+
+// Logic to start music and transition from Page 1
+function startExperience() {
+    const music = document.getElementById("bgMusic");
+    music.play();
+    
+    // Create Heart Particles
+    setInterval(createHeart, 300);
+    
+    nextPage('p1', 'p2');
+}
+
+function nextPage(curr, next) {
+    document.getElementById(curr).classList.remove('active');
+    document.getElementById(next).classList.add('active');
+}
+
+function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.innerHTML = '❤️';
+    heart.style.left = Math.random() * 100 + 'vw';
+    heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+    document.getElementById('particle-container').appendChild(heart);
+    
+    setTimeout(() => { heart.remove(); }, 4000);
+}
+
+window.onload = typeWriter;// All your messages stored here
 const messages = {
     text1: "I know things haven't been perfect... but you are perfect to me.",
     text2: "I looked back at this and realized... I never want to lose this smile again. The way i do the things in the past.. I didn't treat you they way you be treated and now i want to be the best the way you want to me..",
