@@ -18,29 +18,29 @@
     <div class="container">
         <section class="card active" id="p1" onclick="startExperience()">
             <div class="glass-box">
-                <h2 id="typewriter" class="cursive"></h2>
+                <h2 id="text1" class="cursive"></h2>
                 <div class="pulse-ring"></div>
-                <p class="tap-hint">Tap to unlock my Heart</p>
+                <p class="tap-hint" id="hint1">Tap to unlock my Heart</p>
             </div>
         </section>
 
-        <section class="card" id="p2" onclick="nextPage('p2', 'p3')">
+        <section class="card" id="p2" onclick="handleTap('p2', 'p3', 'text3')">
             <div class="glass-box">
                 <div class="img-frame">
                     <img src="Screenshot_2026-02-25-17-51-44-083_com.instagram.android-edit.jpg" alt="Memory 1">
                 </div>
-                <p class="message">"I looked back at this and realized... I never want to lose this smile again. The way i do the things in the past.. I didn't treat you they way you be treated and now i want to be the best the way you want to me.."</p>
-                <p class="tap-hint">Continue...</p>
+                <p class="message" id="text2"></p>
+                <p class="tap-hint" id="hint2">Continue...</p>
             </div>
         </section>
 
-        <section class="card" id="p3" onclick="nextPage('p3', 'p4')">
+        <section class="card" id="p3" onclick="handleTap('p3', 'p4', 'text4')">
             <div class="glass-box">
                 <div class="img-frame">
                     <img src="IMG_20260225_182332_763.jpg" alt="Memory 2">
                 </div>
-                <p class="message">"I know I messed up, but let me make it up to you starting today. Sorry for all the frickin things.. In your special day i am just making this small peace of suprise for you so it could be your memorable one."</p>
-                <p class="tap-hint">One more tap...</p>
+                <p class="message" id="text3"></p>
+                <p class="tap-hint" id="hint3">One more tap...</p>
             </div>
         </section>
 
@@ -48,7 +48,7 @@
             <div class="glass-box celebration">
                 <h1 class="birthday-title">Happy Birthday, Pramila💟!</h1>
                 <div class="cake-icon">🎂</div>
-                <p>Every second with you is a gift I don't deserve, but I'll cherish forever Many many happy birthday and may your all dreams become true very soon and never ever think of giving up because remember at that time you have to do it for yourself and always remember me in your bad days i will be in your side for sure.</p>
+                <p id="text4"></p>
                 <button class="retry-btn" onclick="location.reload()">See it again</button>
             </div>
         </section>
