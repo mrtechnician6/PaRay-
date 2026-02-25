@@ -35,7 +35,7 @@ function createHeart() {
 
 window.onload = typeWriter;// All your messages stored here
 const messages = {
-    text1: "I know things haven't been perfect... but you are perfect to me.",
+    text1: "I know things haven't been perfect... but I want to say sorry for making you discomfort.. That's all i can say hai don't be rude hai.. Lets start fresh",
     text2: "I looked back at this and realized... I never want to lose this smile again. The way i do the things in the past.. I didn't treat you they way you be treated and now i want to be the best the way you want to me..",
     text3: "I know I messed up, but let me make it up to you starting today. Sorry for all the frickin things.. In your special day i am just making this small peace of suprise for you so it could be your memorable one.",
     text4: "Every second with you is a gift I don't deserve, but I'll cherish forever. Many many happy birthday and may your all dreams become true very soon and never ever think of giving up because remember at that time you have to do it for yourself and always remember me in your bad days i will be in your side for sure."
