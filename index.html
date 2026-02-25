@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You, Pa_Ray💟</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="your-song-file.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <section class="card active" id="p1" onclick="nextPage('p1', 'p2')">
+            <div class="content">
+                <h2 id="typewriter"></h2>
+                <p class="tap-hint">[ Tap to open my heart ]</p>
+            </div>
+        </section>
+
+        <section class="card" id="p2" onclick="nextPage('p2', 'p3')">
+            <div class="glass-box">
+                <img src="photo1.jpg" alt="Our Memory" class="fade-in-img">
+                <p>"I miss the way we were. I'm sorry for everything..."</p>
+                <p class="tap-hint">[ Tap to continue ]</p>
+            </div>
+        </section>
+
+        <section class="card" id="p3" onclick="nextPage('p3', 'p4')">
+            <div class="glass-box">
+                <img src="photo2.jpg" alt="Us" class="fade-in-img">
+                <p>"I promise to be the man you deserve. Every day."</p>
+                <p class="tap-hint">[ One last tap... ]</p>
+            </div>
+        </section>
+
+        <section class="card" id="p4">
+            <div class="content">
+                <h1 class="hb-text">Happy Birthday, Beautiful</h1>
+                <p>I know I messed up, but let me make it up to you starting today.</p>
+                <div class="hearts">❤️</div>
+                <button class="retry" onclick="location.reload()">Replay Our Story</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
